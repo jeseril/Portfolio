@@ -82,6 +82,8 @@ main{
     transform: rotate(60deg);
 }
 .contenedor-cuadros-fotoperfil{
+    display: flex;
+    justify-content: center;
     margin-left: 5rem;
 }
 
@@ -130,12 +132,12 @@ h2{
     margin: 0 2rem;
 }
 
-@media (max-width: 600px) {
-    /* alinear menu hamburguesa a la derecha */
-    header nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between  ;
+@media (max-width: 1024px){
+    header{
+        width: 90%;
+    }
+    main{
+        margin-top: 2rem;
     }
     .container-info-picture{
         flex-direction: column;
@@ -143,44 +145,30 @@ h2{
     }
 
     h1{
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
 
     h2{
-        font-size: 4rem;
+        font-size: 4.8rem;
     }
-
     /* Se cambia el orden de la imagen y los textos en info-picture */
 
     .elemento1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         order:1;
     }
 
     .elemento2{
         order:0;
     }
-
-    .container-info-picture div p{
-        width: 90%;
-    }
-
+    /* cambiar tamano cuadro foto */
     .cuadro{
         width: 20rem;
         height: 20rem;
     }
     
-    .nombre-seccion{
-        color: var(--secondary-color);
-        display: block;
-    }
-    .menu-hamburguesa{
-        display: block;
-    }
-
-    main{
-        margin-top: 2rem;
-    }
-
     .contenedor-cuadros-fotoperfil{
         margin-bottom: 5rem;
     }
@@ -190,10 +178,40 @@ h2{
         margin-top: 3rem;
     }
 
+    .container-info-picture div p{
+        width: 90%;
+    }
+    
     .icono-enlace{
         width: 4rem;
         margin: 0 2rem;
     }
+}
+
+@media (max-width: 767px) {
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+    /* alinear menu hamburguesa a la derecha */
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between  ;
+    } 
+
+    .nombre-seccion{
+        color: var(--secondary-color);
+        display: block;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+
     /* ocultar secciones */
     .secciones{
         display: none;
