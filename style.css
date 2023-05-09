@@ -41,12 +41,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 60vw;
 }
 .container-info-picture{
     display: flex;
     flex-direction: row;
-    
 }
 
 .container-info-picture div p{
@@ -56,17 +56,16 @@ main{
 
 .cuadro{
     position: absolute;
-}
-.cuadro-1{
     width: 30rem;
     height: 30rem;
+}
+.cuadro-1{
+    
     background-color: var(--primary-color);
     border-radius: 2rem;
     transform: rotate(40deg);
 }
 .cuadro-2{
-    width: 30rem;
-    height: 30rem;
     background-color: var(--secondary-color);
     border-radius: 2rem;
     transform: rotate(60deg);
@@ -77,8 +76,6 @@ main{
 
 .contenedor-foto-perfil{
     position: relative;
-    width: 30rem;
-    height: 30rem;
     transform: rotate(-15deg);
     border: 0.5rem solid var(--secondary-color);
     border-radius: 2rem;
@@ -107,3 +104,69 @@ h2{
     font-size: 7rem;
     color: var(--primary-color);
 }
+.container-enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8rem;
+    width: 30%;
+    height: 8rem;
+    
+}
+.icono-enlace{
+    width: 5rem;
+    margin: 0 2rem;
+}
+
+@media (max-width: 600px) {
+   
+    .container-info-picture{
+        flex-direction: column;
+        
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    /* Se cambia el orden de la imagen y los textos */
+
+    .elemento1{
+        order:1;
+    }
+
+    .elemento2{
+        order:0;
+    }
+
+    .container-info-picture div p{
+        width: 90%;
+    }
+
+    .cuadro{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    main{
+        margin-top: 2rem;
+    }
+
+    .contenedor-cuadros-fotoperfil{
+        margin-bottom: 5rem;
+    }
+
+    .container-enlaces{
+        width: 70%;
+    }
+
+    .icono-enlace{
+        width: 4rem;
+        margin: 0 2rem;
+    }
+
+  }
