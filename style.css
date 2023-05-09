@@ -22,6 +22,7 @@ body{
 
 header{
     display: flex;
+    width: 60% ;
     justify-content: center;
     align-items: center;
     height: 10rem;
@@ -34,6 +35,15 @@ li{
 a{
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.menu-hamburguesa{
+    width: 5rem;
+    display: none;
+}
+
+.nombre-seccion{
+    display: none;
 }
 
 main{
@@ -52,6 +62,7 @@ main{
 .container-info-picture div p{
     width: 70%;
     color: var(--tertiary-color);
+    margin-top: 1.5rem;
 }
 
 .cuadro{
@@ -92,6 +103,7 @@ main{
 }
 
 h1,h2{
+    display: flex;
     font-family: 'Ultra', serif;
     font-weight:lighter;
 }
@@ -119,7 +131,12 @@ h2{
 }
 
 @media (max-width: 600px) {
-   
+    /* alinear menu hamburguesa a la derecha */
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between  ;
+    }
     .container-info-picture{
         flex-direction: column;
         
@@ -133,7 +150,7 @@ h2{
         font-size: 4rem;
     }
 
-    /* Se cambia el orden de la imagen y los textos */
+    /* Se cambia el orden de la imagen y los textos en info-picture */
 
     .elemento1{
         order:1;
@@ -150,6 +167,14 @@ h2{
     .cuadro{
         width: 20rem;
         height: 20rem;
+    }
+    
+    .nombre-seccion{
+        color: var(--secondary-color);
+        display: block;
+    }
+    .menu-hamburguesa{
+        display: block;
     }
 
     main{
@@ -169,5 +194,9 @@ h2{
         width: 4rem;
         margin: 0 2rem;
     }
+    /* ocultar secciones */
+    .secciones{
+        display: none;
+        }
 
   }
