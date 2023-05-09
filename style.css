@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #268C5C;
+    --secondary-color: #88BF90;
+    --tertiary-color: #365E4B;
+    --minium-font-size:1.6rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: var(--minium-font-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+main{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+}
+.container-info-picture{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-info-picture div p{
+    width: 70%;
+    color: var(--tertiary-color);
+}
+
+.cuadro{
+    position: absolute;
+}
+.cuadro-1{
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    transform: rotate(40deg);
+}
+.cuadro-2{
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    transform: rotate(60deg);
+}
+.contenedor-cuadros-fotoperfil{
+    margin-left: 5rem;
+}
+
+.contenedor-foto-perfil{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    transform: rotate(-15deg);
+    border: 0.5rem solid var(--secondary-color);
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+.foto-perfil{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    transform: rotate(6deg)scale(1.1)translateY(-4%);
+}
+
+h1,h2{
+    font-family: 'Ultra', serif;
+    font-weight:lighter;
+}
+h1{
+    font-size: 4.9rem;
+    color: var(--secondary-color);
+}
+
+h2{
+    font-size: 7rem;
+    color: var(--primary-color);
+}
