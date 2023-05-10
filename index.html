@@ -13,14 +13,32 @@
 <body>
     <header>
         <nav>
-            <li class="nombre-seccion">Home</li>
-            <figure><img class="menu-hamburguesa" src="./img/svg/menu-hamburguesa.svg" alt=""></figure>
             <ul class="secciones">
                 <li><a href="#info-picture">Home</a></li>
                 <li><a href="">Acerca de mi</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Trabajemos juntos</a></li>
             </ul>
+            <!-- mobile -->
+            <div class="container-menu-namesection">
+                <li class="nombre-seccion">Home</li>
+                <figure><img class="menu-hamburguesa" src="./img/svg/menu-hamburguesa.svg" alt=""></figure>
+            </div>
+            <div class="mobile-menu" id="oculto">
+                <div class="contenedor-cerrar"><img class="cerrar-menu" src="./img/svg/cerrar.svg" alt=""></div>
+                <ul class="secciones-mobile">
+                    <li><a href="#info-picture">Home</a></li>
+                    <li><a href="">Acerca de mi</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Trabajemos juntos</a></li>
+                </ul>
+                <a href="">jeseril2213@gmail.com</a>
+                <div class="container-enlaces">
+                    <a href="https://github.com/jeseril"><img src="./img/svg/github.svg" class="icono-enlace" alt="git"></a>
+                    <a href="https://www.linkedin.com/in/jesussebastian/"><img src="./img/svg/linkedin.svg" class="icono-enlace" alt="linkedin"></a>
+                    <a href="https://www.behance.net/sebastirincon"><img src="./img/svg/behance.svg" class="icono-enlace" alt="behance"></a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -36,11 +54,13 @@
                 <div class="cuadro contenedor-foto-perfil"><img class="foto-perfil" src="./img/Foto3.jpg" alt="Foto Jesus Rincon"></div>
             </div>
         </section>
-        <div class="container-enlaces">
+        <section class="container-enlaces">
             <a href="https://github.com/jeseril"><img src="./img/svg/github.svg" class="icono-enlace" alt="git"></a>
             <a href="https://www.linkedin.com/in/jesussebastian/"><img src="./img/svg/linkedin.svg" class="icono-enlace" alt="linkedin"></a>
             <a href="https://www.behance.net/sebastirincon"><img src="./img/svg/behance.svg" class="icono-enlace" alt="behance"></a>
-        </div>
+        </section>
     </main>
+    <script src="main.js"></script>
+
 </body>
 </html>

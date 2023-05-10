@@ -20,6 +20,10 @@ body{
     align-items: center;
 }
 
+#oculto{
+    display: none;
+}
+
 header{
     display: flex;
     width: 60% ;
@@ -37,10 +41,15 @@ a{
     color: var(--secondary-color);
 }
 
+.mobile-menu{
+    display: none;
+}
+
 .menu-hamburguesa{
     width: 5rem;
     display: none;
 }
+
 
 .nombre-seccion{
     display: none;
@@ -189,6 +198,18 @@ h2{
 }
 
 @media (max-width: 767px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 5rem;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+    
+    
 
     h1{
         font-size: 2.8rem;
@@ -198,17 +219,55 @@ h2{
         font-size: 4rem;
     }
     /* alinear menu hamburguesa a la derecha */
-    header nav{
+
+    .container-menu-namesection{
         width: 100%;
         display: flex;
-        justify-content: space-between  ;
+        justify-content: space-between;
+        align-items: center;
     } 
+
+    .mobile-menu{
+        position: absolute;
+        background-color: white ;
+
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contenedor-cerrar{
+        width:80%;
+        height: 10rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cerrar-menu{
+        width: 5rem;
+        right: 0;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu ul li{
+        padding: 2rem 0;
+    }
 
     .nombre-seccion{
         color: var(--secondary-color);
         display: block;
     }
     .menu-hamburguesa{
+        cursor: pointer;
         display: block;
     }
 
