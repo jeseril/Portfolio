@@ -14,8 +14,8 @@
     <header>
         <nav>
             <ul class="secciones">
-                <li><a href="#info-picture">Home</a></li>
-                <li><a href="">Acerca de mi</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="">Portfolio</a></li>
                 <li><a href="">Trabajemos juntos</a></li>
             </ul>
@@ -27,8 +27,8 @@
             <div class="mobile-menu" id="oculto">
                 <div class="contenedor-cerrar"><img class="cerrar-menu" src="./img/svg/cerrar.svg" alt=""></div>
                 <ul class="secciones-mobile">
-                    <li><a href="#info-picture">Home</a></li>
-                    <li><a href="">Acerca de mi</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Trabajemos juntos</a></li>
                 </ul>
@@ -42,7 +42,10 @@
         </nav>
     </header>
     <main>
-        <section class="container-info-picture" id="info-pitcure">
+                <!-- sección home -->
+
+        <section class="home" id="home">
+            <div class="container-info-picture" id="info-pitcure">
             <div class="elemento1">
                 <h1>Jesus Rincon</h1>
                 <h2>Frontend <br>Developer.</h2>
@@ -53,14 +56,41 @@
                 <div class="cuadro cuadro-2"></div>
                 <div class="cuadro contenedor-foto-perfil"><img class="foto-perfil" src="./img/Foto3.jpg" alt="Foto Jesus Rincon"></div>
             </div>
-        </section>
-        <section class="container-enlaces">
+        </div>
+        <div class="container-enlaces">
             <a href="https://github.com/jeseril"><img src="./img/svg/github.svg" class="icono-enlace" alt="git"></a>
             <a href="https://www.linkedin.com/in/jesussebastian/"><img src="./img/svg/linkedin.svg" class="icono-enlace" alt="linkedin"></a>
             <a href="https://www.behance.net/sebastirincon"><img src="./img/svg/behance.svg" class="icono-enlace" alt="behance"></a>
             
+        </div>
+
+            <!-- sección habilidades -->
+
         </section>
-        <section></section>
+        <section class="habilidades" id="habilidades">
+            <div class="habilidades-programacion">
+                <h2>.html</h2>
+                <h1>c s s.</h1>
+                <h1>.javascript</h1>
+            </div>
+            <div class="habilidades-diseno">
+                <figure><img src="./img/svg/ilu-ilu.svg" alt="ilustración"><p>Ilustración</p></figure>
+                <figure><img src="./img/svg/ilu-redes-sociales.svg" alt="redessociales"><p>Contenido para redes sociales</p></figure>
+                <figure><img src="./img/svg/ilu-3d.svg" alt="modelado3d"><p>Modelado 3D</p></figure>
+                <figure><img src="./img/svg/ilu-personajes.svg" alt="diseñopersonajes"><p>Diseño de personajes</p></figure>
+            </div>
+            <div class="habilidades-software">
+                <figure><img src="./img/svg/habilidades-software.svg" alt="habilidades-software"></figure>
+            </div>
+            <div class="habilidades-blandas">
+                <p>Comunicación asíncrona</p>
+                <p>Trabajo en equipo</p>
+                <p>Compromiso</p>
+                <p>Resiliencia</p>
+                <p>Adaptabilidad</p>
+            </div>
+        </section>
+
     </main>
     <script src="main.js"></script>
 

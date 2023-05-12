@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font);
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Ultra', serif;
     --primary-color: #268C5C;
     --secondary-color: #88BF90;
     --tertiary-color: #365E4B;
@@ -14,6 +16,8 @@ html{
 }
 
 body{
+    width: 100%;
+    height: 100%;
     font-size: var(--minium-font-size);
     display: flex;
     flex-direction: column;
@@ -25,12 +29,16 @@ body{
 }
 
 header{
+    position: fixed;
     display: flex;
-    width: 60% ;
+    width: 100% ;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     height: 10rem;
+    background-color: white;
 }
+
 li{
     display: inline-block;
     margin: 0 2rem;
@@ -55,21 +63,37 @@ a{
     display: none;
 }
 
+section{
+    height: calc(100vh - 10rem);
+    min-height: 65rem;
+    margin-top: 10rem;
+}
+
 main{
-    margin-top: 12rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 70vw;
+    height: 100%;
 }
+
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-info-picture{
     display: flex;
     flex-direction: row;
 }
 
 .container-info-picture div p{
-    width: 70%;
+    width: 90%;
     color: var(--tertiary-color);
     margin-top: 1.5rem;
 }
@@ -108,6 +132,7 @@ main{
 
 .foto-perfil{
     position: absolute;
+   
     object-fit: cover;
     width: 100%;
     transform: rotate(6deg)scale(1.1)translateY(-4%);
@@ -115,9 +140,10 @@ main{
 
 h1,h2{
     display: flex;
-    font-family: 'Ultra', serif;
-    font-weight:lighter;
+    font-family: var(--secondary-font);
+    font-weight: lighter;
 }
+
 h1{
     font-size: 4.9rem;
     color: var(--secondary-color);
@@ -141,13 +167,116 @@ h2{
     margin: 0 2rem;
 }
 
+.habilidades{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;    
+}
+.habilidades div{
+    width: 50%;
+    height: 50%;
+}
+
+.habilidades-programacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.habilidades-programacion :nth-child(1),
+.habilidades-programacion :nth-child(2),
+.habilidades-programacion :nth-child(3){
+    display: inline-block;
+    text-align: center;
+}
+
+.habilidades-programacion :nth-child(1){
+    font-size: 7rem;
+    
+}
+
+.habilidades-programacion :nth-child(2){
+    font-size: 8rem;
+    display: inline;
+    text-align: center;
+}
+
+.habilidades-programacion :nth-child(3){
+    font-size: 3.5rem;
+
+    color: var(--tertiary-color);
+}
+
+.habilidades-diseno{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.habilidades-diseno figure{
+   color: var(--tertiary-color);
+}
+
+.habilidades-diseno figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    width: 50%;
+}
+
+.habilidades-diseno figure img{
+    height: 5rem;
+}
+
+.habilidades-software{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.habilidades-software figure img{
+    width: 100%;
+}
+
+.habilidades-blandas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.habilidades-blandas p{
+    padding: 1rem;
+    font-family: var(--secondary-font);
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.habilidades-blandas :nth-child(1),
+.habilidades-blandas :nth-child(4){
+    color: var(--tertiary-color);
+}
+
+.habilidades-blandas :nth-child(2),
+.habilidades-blandas :nth-child(5){
+    color: var(--primary-color);
+}
+
+.habilidades-blandas :nth-child(3){
+    color:var(--secondary-color);
+}
+
+
+
 @media (max-width: 1024px){
     header{
         width: 90%;
     }
-    main{
-        margin-top: 2rem;
-    }
+
     .container-info-picture{
         flex-direction: column;
         
@@ -179,6 +308,7 @@ h2{
     }
     
     .contenedor-cuadros-fotoperfil{
+        margin-top: 5rem;
         margin-bottom: 5rem;
     }
 
@@ -202,6 +332,7 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 80%;
         height: 5rem;
     }
@@ -233,8 +364,8 @@ h2{
 
         top: 0;
         width: 100%;
-        height: 100%;
-        z-index: 1;
+        height: 100vh;
+        z-index: 5;
 
         display: flex;
         align-items: center;
@@ -274,6 +405,12 @@ h2{
     /* ocultar secciones */
     .secciones{
         display: none;
+        }
+
+
+        .habilidades div{
+            width: 100%;
+            height: 50%;
         }
 
   }
