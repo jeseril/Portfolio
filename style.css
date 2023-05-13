@@ -279,7 +279,7 @@ h2{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -287,39 +287,53 @@ h2{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.contenedor-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.contenedor-proyecto-img{
+    position: relative;
+    display: flex;
+    height: 25rem;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.contenedor-portfolio-proyectos>div{
-    position: relative;
-    width: 50%;
-    height: 25rem;
+.contenedor-proyecto p{
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 1rem 0;
+    color:var(--primary-color);
 }
 
 .rectangulo{
     position: absolute;
     aspect-ratio: 16/9;
-    width: 90%;
+    width: 70%;
     background-color: var(--primary-color);
     border-radius: 2rem;
 }
 
-.contenedor-proyecto >:nth-child(1){
+.contenedor-proyecto-img >:nth-child(1){
     
     background-color: var(--primary-color);
     transform: rotate(10deg);
 }
 
-.contenedor-proyecto :nth-child(2){
+.contenedor-proyecto-img :nth-child(2){
     
     background-color:var(--secondary-color);
     transform: rotate(5deg);
 }
-.contenedor-proyecto :nth-child(3){
+.contenedor-proyecto-img :nth-child(3){
     border: 0.5rem solid var(--secondary-color);
     overflow: hidden;
 }
@@ -347,6 +361,7 @@ h2{
 
 .correo :nth-child(1){
     font-family: 'Ultra',serif;
+    font-size: 3rem;
 }
 
 .correo :nth-child(2){
@@ -530,10 +545,15 @@ h2{
             width: 100%;
         }
 
-        .contenedor-portfolio-proyectos>div{
-            width: 90%;
-            height: 25rem;
+        .contenedor-portfolio-proyectos{
+            margin-bottom: 1.5rem;
         }
+
+        .contenedor-proyecto{
+            width: 70%;
+        }
+
+
 
 
   }
