@@ -171,7 +171,7 @@ h2{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;    
+    align-items: center;
 }
 .habilidades div{
     width: 50%;
@@ -242,6 +242,7 @@ h2{
 }
 
 .habilidades-blandas{
+    padding:0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -250,7 +251,11 @@ h2{
 }
 
 .habilidades-blandas p{
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:1.5rem 1.5rem;
+    width: 50%;
     font-family: var(--secondary-font);
     font-weight: lighter;
     font-size: 1.3rem;
@@ -269,6 +274,115 @@ h2{
 .habilidades-blandas :nth-child(3){
     color:var(--secondary-color);
 }
+
+.portfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-portfolio-proyectos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-portfolio-proyectos>div{
+    position: relative;
+    width: 50%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+.rectangulo{
+    position: absolute;
+    aspect-ratio: 16/9;
+    width: 90%;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+}
+
+.contenedor-proyecto >:nth-child(1){
+    
+    background-color: var(--primary-color);
+    transform: rotate(10deg);
+}
+
+.contenedor-proyecto :nth-child(2){
+    
+    background-color:var(--secondary-color);
+    transform: rotate(5deg);
+}
+.contenedor-proyecto :nth-child(3){
+    border: 0.5rem solid var(--secondary-color);
+    overflow: hidden;
+}
+
+.img-prev-proyecto{
+    object-fit: cover;
+   height: 100%;
+}
+
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.correo{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    width: 100%;
+    color:var(--secondary-color);
+}
+
+.correo :nth-child(1){
+    font-family: 'Ultra',serif;
+}
+
+.correo :nth-child(2){
+    margin-left: 2.5rem;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales div{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales-nombre :nth-child(1){
+    font-family: 'Ultra',serif;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.redes-sociales-nombre :nth-child(2){
+    font-family: 'Ultra',serif;
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+.redes-sociales-links{
+    margin-left: 5rem;
+}
+
+.redes-sociales-links a{
+    margin-top: 2rem;
+}
+
 
 
 
@@ -412,5 +526,14 @@ h2{
             width: 100%;
             height: 50%;
         }
+        .habilidades-blandas p{
+            width: 100%;
+        }
+
+        .contenedor-portfolio-proyectos>div{
+            width: 90%;
+            height: 25rem;
+        }
+
 
   }
